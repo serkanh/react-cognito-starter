@@ -32,5 +32,8 @@ ServerlessDeploymentBucketName: react-cognito-starter-de-serverlessdeploymentbuc
 ![](./docimgs/signup.png)
 5. Check your email that is used during the signup for verification code.
 ![](./docimgs/verification-email.png)
-5. Enter the confirmation code.
+6. Enter the confirmation code.
 ![](./docimgs/enter-confirmation-code.png)
+
+#### To get the cognito output 
+`sls info --stage=dev -v` or with aws profile `sls info --stage=dev --aws-profile=HA -v`
