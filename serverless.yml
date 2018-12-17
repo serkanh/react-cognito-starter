@@ -1,5 +1,8 @@
 service: react-cognito-starter 
 
+package:
+  exclude:
+    - client/**
 
 custom:
   stage: ${opt:stage, self:provider.stage}
@@ -13,7 +16,6 @@ functions:
   hello:
     handler: handler.hello
 
-
 resources:
-  - ${file(resources/cognito-user-pool.yml)}
-  - ${file(resources/cognito-identity-pool.yml)}
+  - ${file(./resources/cognito-user-pool.yml)}
+  - ${file(./resources/cognito-identity-pool.yml)}
